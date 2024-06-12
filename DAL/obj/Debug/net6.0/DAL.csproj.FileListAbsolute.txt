@@ -1,0 +1,36 @@
+C:\KPI\Dot NET\Lab3\ticket_office_WEB\DAL\bin\Debug\net6.0\DAL.deps.json
+C:\KPI\Dot NET\Lab3\ticket_office_WEB\DAL\bin\Debug\net6.0\DAL.dll
+C:\KPI\Dot NET\Lab3\ticket_office_WEB\DAL\bin\Debug\net6.0\DAL.pdb
+C:\KPI\Dot NET\Lab3\ticket_office_WEB\DAL\obj\Debug\net6.0\DAL.csproj.AssemblyReference.cache
+C:\KPI\Dot NET\Lab3\ticket_office_WEB\DAL\obj\Debug\net6.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\KPI\Dot NET\Lab3\ticket_office_WEB\DAL\obj\Debug\net6.0\DAL.AssemblyInfoInputs.cache
+C:\KPI\Dot NET\Lab3\ticket_office_WEB\DAL\obj\Debug\net6.0\DAL.AssemblyInfo.cs
+C:\KPI\Dot NET\Lab3\ticket_office_WEB\DAL\obj\Debug\net6.0\DAL.csproj.CoreCompileInputs.cache
+C:\KPI\Dot NET\Lab3\ticket_office_WEB\DAL\obj\Debug\net6.0\DAL.dll
+C:\KPI\Dot NET\Lab3\ticket_office_WEB\DAL\obj\Debug\net6.0\refint\DAL.dll
+C:\KPI\Dot NET\Lab3\ticket_office_WEB\DAL\obj\Debug\net6.0\DAL.pdb
+C:\KPI\Dot NET\Lab3\ticket_office_WEB\DAL\obj\Debug\net6.0\ref\DAL.dll
+C:\KPI\3курс\Dot NET\Lab3\ticket_office_WEB\DAL\bin\Debug\net6.0\DAL.deps.json
+C:\KPI\3курс\Dot NET\Lab3\ticket_office_WEB\DAL\bin\Debug\net6.0\DAL.dll
+C:\KPI\3курс\Dot NET\Lab3\ticket_office_WEB\DAL\bin\Debug\net6.0\DAL.pdb
+C:\KPI\3курс\Dot NET\Lab3\ticket_office_WEB\DAL\obj\Debug\net6.0\DAL.csproj.AssemblyReference.cache
+C:\KPI\3курс\Dot NET\Lab3\ticket_office_WEB\DAL\obj\Debug\net6.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\KPI\3курс\Dot NET\Lab3\ticket_office_WEB\DAL\obj\Debug\net6.0\DAL.AssemblyInfoInputs.cache
+C:\KPI\3курс\Dot NET\Lab3\ticket_office_WEB\DAL\obj\Debug\net6.0\DAL.AssemblyInfo.cs
+C:\KPI\3курс\Dot NET\Lab3\ticket_office_WEB\DAL\obj\Debug\net6.0\DAL.csproj.CoreCompileInputs.cache
+C:\KPI\3курс\Dot NET\Lab3\ticket_office_WEB\DAL\obj\Debug\net6.0\DAL.dll
+C:\KPI\3курс\Dot NET\Lab3\ticket_office_WEB\DAL\obj\Debug\net6.0\refint\DAL.dll
+C:\KPI\3курс\Dot NET\Lab3\ticket_office_WEB\DAL\obj\Debug\net6.0\DAL.pdb
+C:\KPI\3курс\Dot NET\Lab3\ticket_office_WEB\DAL\obj\Debug\net6.0\ref\DAL.dll
+C:\KPI\Диплом\ticket_office_WEB\DAL\bin\Debug\net6.0\DAL.deps.json
+C:\KPI\Диплом\ticket_office_WEB\DAL\bin\Debug\net6.0\DAL.dll
+C:\KPI\Диплом\ticket_office_WEB\DAL\bin\Debug\net6.0\DAL.pdb
+C:\KPI\Диплом\ticket_office_WEB\DAL\obj\Debug\net6.0\DAL.csproj.AssemblyReference.cache
+C:\KPI\Диплом\ticket_office_WEB\DAL\obj\Debug\net6.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\KPI\Диплом\ticket_office_WEB\DAL\obj\Debug\net6.0\DAL.AssemblyInfoInputs.cache
+C:\KPI\Диплом\ticket_office_WEB\DAL\obj\Debug\net6.0\DAL.AssemblyInfo.cs
+C:\KPI\Диплом\ticket_office_WEB\DAL\obj\Debug\net6.0\DAL.csproj.CoreCompileInputs.cache
+C:\KPI\Диплом\ticket_office_WEB\DAL\obj\Debug\net6.0\DAL.dll
+C:\KPI\Диплом\ticket_office_WEB\DAL\obj\Debug\net6.0\refint\DAL.dll
+C:\KPI\Диплом\ticket_office_WEB\DAL\obj\Debug\net6.0\DAL.pdb
+C:\KPI\Диплом\ticket_office_WEB\DAL\obj\Debug\net6.0\ref\DAL.dll

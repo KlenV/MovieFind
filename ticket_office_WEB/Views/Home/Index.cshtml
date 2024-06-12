@@ -1,0 +1,88 @@
+﻿@{
+    ViewData["Title"] = "Головна";
+    var movieResults = ViewBag.MovieResults as List<ticket_office_WEB.Models.MovieModel>;
+    var userQuery = ViewBag.UserQuery as string;
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h2 class="text-center mt-5">Опис сюжету фільму</h2>
+            <form asp-controller="OpenAI" asp-action="GetRecommendations" method="post" class="mt-3">
+                <textarea name="userQuery" class="form-control mb-3" placeholder="Введіть опис сюжету фільму, який ви хочете подивитись..." style="border-radius: 15px; height: 150px;">@userQuery</textarea>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary" style="border-radius: 15px;">Отримати рекомендації</button>
+                </div>
+            </form>
+            <p id="error-message" style="color: black;"></p>
+        </div>
+        <div class="col-md-10">
+            @if (movieResults != null)
+            {
+                <div class="mt-3">
+                    <h4>Рекомендації:</h4>
+                    <ul class="list-unstyled">
+                        @foreach (var movie in movieResults)
+                        {
+                            <li class="mb-4">
+                                <div class="card">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            @if (!string.IsNullOrEmpty(movie.PosterPath))
+                                            {
+                                                <img src="https://image.tmdb.org/t/p/w300/@movie.PosterPath" class="card-img-top" alt="@movie.Title">
+                                            }
+                                            else
+                                            {
+                                                <div class="card-img-top d-flex align-items-center justify-content-center" style="height: 100%; background-color: #f0f0f0;">
+                                                    <span>Постер відсутній</span>
+                                                </div>
+                                            }
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">@movie.Title (@movie.ReleaseYear)</h5>
+                                                <p class="card-text">
+                                                    @if (movie.Genres != null && movie.Genres.Any())
+                                                    {
+                                                        @foreach (var genreId in movie.Genres)
+                                                        {
+                                                            if (ViewBag.MovieGenres.ContainsKey(genreId))
+                                                            {
+                                                                <span>@ViewBag.MovieGenres[genreId]</span>
+                                                            }
+                                                            else if (ViewBag.TvGenres.ContainsKey(genreId))
+                                                            {
+                                                                <span>@ViewBag.TvGenres[genreId]</span>
+                                                            }
+                                                            else
+                                                            {
+                                                                <span></span>
+                                                            }
+
+                                                            @if (genreId != movie.Genres.Last())
+                                                            {
+                                                                <span> •</span>
+                                                            }
+                                                        }
+                                                    }
+                                                    else
+                                                    {
+                                                        <span></span>
+                                                    }
+                                                </p>
+                                                <p class="card-text"><strong>Рейтинг:</strong> @movie.VoteAverage</p>
+                                                <p class="card-text">@movie.Overview</p>                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            }
+        </div>
+
+    </div>
+</div>

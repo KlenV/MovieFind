@@ -1,0 +1,46 @@
+﻿@model List<ticket_office_WEB.Models.MovieModel>
+
+@{
+    ViewData["Title"] = "Обране";
+}
+
+@if (Model != null && Model.Any())
+{
+    <div class="container">
+        <div class="row">
+            @foreach (var movie in Model)
+            {
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card h-100">
+                        <div class="position-absolute end-0 p-2">
+                            <a href="#" class="text-warning add-to-favorites" data-movie-id="@movie.Id" title="Видалити з обраного">
+                                <i class="fas fa-star"></i>
+                            </a>
+                        </div>
+                        @if (!string.IsNullOrEmpty(movie.PosterPath))
+                        {
+                            <img src="https://image.tmdb.org/t/p/w300/@movie.PosterPath" class="card-img-top" alt="@movie.Title">
+                        }
+                        else
+                        {
+                            <div class="card-img-top d-flex align-items-center justify-content-center" style="height: 75%; background-color: #f0f0f0;">
+                                <span>Постер відсутній</span>
+                            </div>
+                        }
+                        <div class="card-body">
+                            <h5 class="card-title">@movie.title (@movie.ReleaseYear)</h5>
+                            <p class="card-text"><strong>Рейтинг:</strong> @movie.VoteAverage</p>
+                            <p class="card-text"><strong>Голоси:</strong> @movie.VoteCount</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}
+else
+{
+    <div class="container">
+        <p class="alert alert-warning text-center">No movies found.</p>
+    </div>
+}
